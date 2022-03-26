@@ -1,38 +1,209 @@
-.App {
-  text-align: center;
+:root {
+  --bgPrimary: #ffffff;
+  --bgSecondary: #000000;
+  --textPrimary: #000000;
+  --textSecondary: #ffffff;
+  --textHighlight: #0bb4bf;
+  --gradientOne: #333437;
+  --gradientTwo: #2e8085;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* UTILITIES CSS */
+
+img {
+  width: 100%;
+  object-fit: cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input,
+textarea {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.section {
+  width: 90%;
+  margin: auto;
+  padding: 0.5rem 0rem;
+}
+
+.text-lg {
+  font-size: 3rem;
+}
+
+.text-md {
+  font-size: 2.2rem;
+}
+
+.text-sm {
+  font-size: 1.6rem;
+}
+
+.text-xsm {
+  font-size: 1rem;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  color: var(--textHighlight);
+}
+
+.icon-sm {
+  width: 20px;
+  height: 20px;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* HEADERS COMPONENT CSS */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_nav {
+  display: flex;
+  flex: 0.6;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header_nav_link {
+  text-decoration: none;
+  color: var(--textPrimary);
+  transition: all 0.25s ease;
+}
+
+.header_nav_link:focus {
+  color: var(--textHighlight);
+}
+
+.header_nav_link:hover {
+  transform: scale(1.1);
+  color: var(--textHighlight);
+}
+
+/* SERVICES PAGE CSS */
+
+.services {
+  margin: 2rem auto;
+}
+
+.service {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin-bottom: 5rem;
+  padding: 0.8rem;
+  column-gap: 1rem;
+}
+
+.service.right {
+  direction: rtl;
+}
+
+.service > img {
+  max-height: 300px;
+  -webkit-box-shadow: -34px 34px 1px 0px rgba(11, 180, 191, 0.5);
+  -moz-box-shadow: -34px 34px 1px 0px rgba(11, 180, 191, 0.5);
+  box-shadow: -34px 34px 1px 0px rgba(11, 180, 191, 0.5);
+  border: 3px solid rgba(11, 180, 191, 0.5);
+}
+
+.service.right > img {
+  -webkit-box-shadow: 34px 34px 1px 0px rgba(11, 180, 191, 0.5);
+  -moz-box-shadow: 34px 34px 1px 0px rgba(11, 180, 191, 0.5);
+  box-shadow: 34px 34px 1px 0px rgba(11, 180, 191, 0.5);
+}
+
+.service_info_title {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.service_info_desc {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* CONTACT PAGE CSS */
+
+.contacts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin: 2rem auto;
+}
+
+.contacts_left {
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.contacts_left_info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.2rem 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.contacts_right {
+  padding: 0rem 1rem;
+}
+
+.form {
+  margin: 2rem auto;
+}
+
+.form-group .label {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+.form input,
+.form textarea {
+  display: block;
+  width: 60%;
+  margin-bottom: 1rem;
+  margin-top: 0.8rem;
+  border-bottom: 2px solid var(--textPrimary);
+  font-family: "Lato", sans-serif;
+}
+
+.form textarea {
+  resize: none;
+}
+
+.btn-submit {
+  padding: 0.8rem 1.2rem;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  transition: all 250ms ease;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-submit:hover,
+.btn-submit:focus {
+  box-shadow: 6px 7px 7px 0px rgba(0, 0, 0, 0.5);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-submit p {
+  margin-left: 0.5rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
 }
