@@ -16,8 +16,8 @@ function MyMap({ google, locations = [] }) {
       zoom={locations.length === 1 ? 14 : 11}
       disableDefaultUI={true}
     >
-      {locations.map((coords) => (
-        <Marker position={coords} />
+      {locations.map((coords, id) => (
+        <Marker key={id} position={coords} />
       ))}
     </Map>
   );

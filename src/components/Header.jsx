@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <div className='section header'>
+    <div className='header'>
       <p className='header_logo text-sm'>Logo</p>
 
       <nav className='header_nav text-xsm'>

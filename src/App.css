@@ -8,10 +8,25 @@
   --gradientTwo: #2e8085;
 }
 
+[data-theme="dark"] {
+  --bgPrimary: #000000;
+  --bgSecondary: #ffffff;
+  --textPrimary: #ffffff;
+  --textSecondary: #000000;
+  --textHighlight: #0bb4bf;
+  --gradientOne: #333437;
+  --gradientTwo: #2e8085;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-color: var(--bgPrimary);
 }
 
 /* UTILITIES CSS */
@@ -30,12 +45,15 @@ textarea {
 
 .section {
   width: 90%;
-  margin: auto;
+  margin: 2rem auto;
   padding: 0.5rem 0rem;
 }
 
 .text-lg {
-  font-size: 3rem;
+  font-size: 4rem;
+  margin: 2rem auto;
+  text-align: center;
+  font-family: "Krona One", sans-serif;
 }
 
 .text-md {
@@ -67,12 +85,33 @@ textarea {
   cursor: pointer;
 }
 
+.primary-btn {
+  padding: 0.8rem 1.5rem !important;
+  border-radius: 100px !important;
+  color: var(--textSecondary) !important;
+  background: linear-gradient(
+    to bottom,
+    var(--gradientTwo),
+    var(--gradientOne)
+  );
+  padding: 0.8rem 1.2rem !important;
+  background: #000 !important;
+  color: #ffffff !important;
+  border: 2px solid #ffffff !important;
+}
+
+.primary-btn:hover {
+  box-shadow: 6px 7px 7px 0px rgba(0, 0, 0, 0.5);
+}
+
 /* HEADERS COMPONENT CSS */
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 80px;
+  padding: 1rem;
 }
 
 .header_nav {
@@ -95,6 +134,106 @@ textarea {
 .header_nav_link:hover {
   transform: scale(1.1);
   color: var(--textHighlight);
+}
+
+/* APP PAGE CSS (HOMEPAGE) */
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5% !important;
+}
+
+.app-btn {
+  position: absolute;
+  top: 75%;
+  left: 7%;
+  margin-top: 1rem;
+}
+
+/* SERVICES COMPONENT CSS (HOMEPAGE) */
+
+.services-home_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 2rem;
+  column-gap: 1.5rem;
+}
+
+.service-home {
+  display: flex;
+  justify-content: center;
+}
+
+.service-home_card {
+  max-width: 300px;
+  height: 100%;
+  padding: 1rem 0.8rem;
+  text-align: center;
+  background: linear-gradient(
+    177.82deg,
+    var(--gradientOne) 14.75%,
+    var(--gradientTwo) 110.88%
+  );
+  border-radius: 10px;
+  transition: all 0.25s ease;
+}
+
+.service-home_card:hover {
+  transform: scale(0.9);
+}
+
+.service-home_card_img {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-home_card_img img {
+  width: 110px;
+  height: 110px;
+}
+
+.service-home_card_info {
+  color: var(--textSecondary);
+}
+
+.service-home_card_info h2 {
+  margin: 1rem auto;
+}
+
+.desc {
+  color: var(--textHighlight);
+  margin: 0.6rem auto;
+}
+
+.service-home-btn {
+  margin: 0.8rem auto;
+}
+
+/* OUR TEAM (HOMEPAGE) */
+
+.team {
+  width: 70%;
+  margin: auto;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.member_img img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid var(--textHighlight);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* SERVICES PAGE CSS */
@@ -141,13 +280,60 @@ textarea {
   line-height: 1.5;
 }
 
+/* FOOTER CSS (HOMEPAGE) */
+
+.footer-container {
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    var(--gradientTwo),
+    var(--gradientOne) 110.88%
+  );
+  padding-top: 2rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.foot_link h2 {
+  margin-bottom: 1rem;
+  color: var(--textHighlight);
+}
+
+.foot_link p {
+  margin-bottom: 0.7rem;
+  font-weight: bold;
+  color: var(--bgColor);
+}
+
+.social-links {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.icons {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+  color: var(--textHighlight);
+}
+
+.footer-text {
+  text-align: center;
+}
+
 /* CONTACT PAGE CSS */
 
 .contacts {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
-  margin: 2rem auto;
 }
 
 .contacts_left {
@@ -192,9 +378,9 @@ textarea {
 
 .btn-submit {
   padding: 0.8rem 1.2rem;
-  display: flex;
-  align-items: center;
-  transition: all 250ms ease;
+  display: flex !important;
+  align-items: center !important;
+  transition: all 250ms ease !important;
 }
 
 .btn-submit:hover,
@@ -206,4 +392,145 @@ textarea {
   margin-left: 0.5rem;
   font-family: "Lato", sans-serif;
   font-weight: 700;
+}
+
+/* TIMELINE */
+
+/* INTRO SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.intro {
+  background: #f45b69;
+  padding: 100px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul {
+  background: #456990;
+  padding: 50px 0;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fff;
+}
+
+.timeline ul li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+  z-index: 1;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #f45b69;
+}
+
+.timeline ul li div::before {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #f45b69 transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #f45b69;
+}
+
+time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+  transition: background 0.5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background: #f45b69;
+}
+
+.timeline ul li div {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #f45b69 transparent transparent;
+  }
 }
