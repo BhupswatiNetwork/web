@@ -12,12 +12,12 @@ const Teams = () => {
       slidesToSlide: 2,
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 1024, min: 490 },
       items: 2,
       slidesToSlide: 2,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 490, min: 0 },
       items: 1,
       slidesToSlide: 1,
     },

@@ -31,6 +31,11 @@ body {
 
 /* UTILITIES CSS */
 
+a {
+  text-decoration: none !important;
+  color: var(--textPrimary) !important;
+}
+
 img {
   width: 100%;
   object-fit: cover;
@@ -145,7 +150,7 @@ textarea {
 
 .app-btn {
   position: absolute;
-  top: 75%;
+  bottom: 30%;
   left: 7%;
   margin-top: 1rem;
 }
@@ -217,6 +222,7 @@ textarea {
 .team {
   width: 70%;
   margin: auto;
+  text-align: center;
 }
 
 .member {
@@ -235,12 +241,63 @@ textarea {
   align-items: center;
   justify-content: center;
 }
+/* ABOUT US PAGE CSS */
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 1rem;
+}
+
+.who-we-are {
+  grid-column: 1 / 5;
+  padding: 1rem;
+  border-top-left-radius: 20px;
+  background-color: #456990;
+  /* background: linear-gradient(
+    83deg,
+    rgba(33, 207, 209, 1) 0%,
+    rgba(253, 251, 45, 1) 100%
+  ); */
+}
+
+.our-mission {
+  grid-column: 5 / end;
+  padding: 1rem;
+  border-top-right-radius: 20px;
+  background-color: #f45b69;
+  /* background: linear-gradient(
+    90deg,
+    rgba(255, 222, 0, 1) 31%,
+    rgba(254, 101, 101, 1) 100%
+  ); */
+}
+
+.what-we-do {
+  grid-column: 1 / span 3;
+  padding: 1rem;
+  border-bottom-left-radius: 20px;
+  background-color: #fa6843;
+  /* background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(200, 179, 215, 1) 57%,
+    rgba(148, 187, 233, 1) 100%
+  ); */
+}
+
+.our-history {
+  grid-column: 4 / end;
+  padding: 1rem;
+  border-bottom-right-radius: 20px;
+  background-color: blueviolet;
+  /* background: radial-gradient(
+    circle,
+    rgba(155, 147, 210, 1) 44%,
+    rgba(233, 148, 230, 1) 100%
+  ); */
+}
 
 /* SERVICES PAGE CSS */
-
-.services {
-  margin: 2rem auto;
-}
 
 .service {
   display: grid;
@@ -420,6 +477,11 @@ h1 {
 
 .timeline ul {
   background: #456990;
+  background: linear-gradient(
+    145.82deg,
+    var(--gradientOne) 40.75%,
+    var(--gradientTwo) 60.88%
+  );
   padding: 50px 0;
 }
 
@@ -532,5 +594,127 @@ time {
     left: -15px;
     border-width: 8px 16px 8px 0;
     border-color: transparent #f45b69 transparent transparent;
+  }
+}
+
+/* MEDIA QUERY FOR TABLET */
+
+/* MEDIA QUERY FOR MOBILES */
+@media only screen and (max-width: 768px) {
+  .btn {
+    padding: 0.5rem 0.8rem !important;
+    font-size: 0.6rem !important;
+  }
+
+  .text-lg {
+    font-size: 3rem;
+  }
+
+  .app-btn {
+    position: absolute;
+    bottom: 3vh;
+    left: 7%;
+    margin-top: 1rem;
+  }
+
+  .about-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+
+  .about-container > div {
+    border-radius: 0;
+  }
+
+  .services-home_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 0.8rem;
+  }
+
+  .team {
+    width: 100%;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .foot_link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 5rem;
+    padding: 0.8rem;
+  }
+
+  .contacts {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.8rem;
+  }
+
+  .contacts_left {
+    order: 2;
+  }
+
+  .contacts_right {
+    order: 1;
+  }
+
+  .contacts_left_info {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.8rem 0rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .m-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .m-menu {
+    text-align: right;
+    flex: 1;
+  }
+
+  .m-menu_icon {
+    font-size: 30px;
+  }
+
+  .m-menu .header_nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 2rem;
+  }
+
+  .m-menu .header_nav .header_nav_link {
+    display: block;
+    padding: 0.6rem 1rem;
+  }
+
+  .m-call {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: 30px;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
   }
 }

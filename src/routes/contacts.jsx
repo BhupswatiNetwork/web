@@ -39,7 +39,7 @@ function Contacts() {
       <Header />
       <div className='section'>
         <div className='contacts'>
-          <Bounce top>
+          <Bounce bottom>
             <div className='contacts_left'>
               <div className='contacts_left_info'>
                 <div className='contacts_left_info_phone'>
@@ -64,7 +64,7 @@ function Contacts() {
               </div>
             </div>
           </Bounce>
-          <Bounce bottom>
+          <Bounce top>
             <div className='contacts_right'>
               <p className='text-md'>Get In Touch With Us</p>
               <p
