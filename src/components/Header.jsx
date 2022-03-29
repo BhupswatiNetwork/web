@@ -25,7 +25,7 @@ function Header() {
         <div className='header'>
           <p className='header_logo text-sm'>Logo</p>
           <Links />
-          <p className='header_call text-sm'>
+          <p className='header_call text-sm btn call-btn'>
             <a href='tel:+919876543210'>
               <FaPhone /> 9876543210
             </a>
