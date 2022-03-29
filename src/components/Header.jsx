@@ -23,7 +23,12 @@ function Header() {
     <>
       {width > 768 ? (
         <div className='header'>
-          <p className='header_logo text-sm'>Logo</p>
+          {/* <p className='header_logo text-sm'>Logo</p> */}
+          <img
+            className='logo'
+            src={process.env.PUBLIC_URL + "/assets/web-logo.png"}
+            alt='Logo of the website'
+          />
           <Links />
           <p className='header_call text-sm btn call-btn'>
             <a href='tel:+919876543210'>

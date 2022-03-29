@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Bounce from "react-reveal/Bounce";
+import firebase from "../config/firebase";
 import {
   FaPhoneAlt,
   FaMailBulk,
@@ -16,6 +17,8 @@ function Contacts() {
       lng: 77.0372613,
     },
   ];
+
+  const contactForm = firebase.database().ref("clients");
 
   const [formData, setFormData] = useState({
     name: "",
@@ -44,7 +47,15 @@ function Contacts() {
 
   useEffect(() => {
     if (Object.keys(errors).length === 0 && isSubmit) {
-      // console.log(formData);
+      const newContactFormRef = contactForm.push();
+      newContactFormRef.set({ ...formData });
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        msg: "",
+      });
     }
   }, [errors, isSubmit]);
 

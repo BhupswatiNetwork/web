@@ -41,6 +41,10 @@ img {
   object-fit: cover;
 }
 
+.logo {
+  width: 140px;
+}
+
 input,
 textarea {
   outline: none;

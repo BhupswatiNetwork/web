@@ -1,9 +1,9 @@
 const services = [
   {
     id: 1,
-    title: "Web Designing",
+    title: "Outsourcing Services",
     img: "web-designing.jpg",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida blandit augue, ut blandit augue convallis a. Nunc ornare ultricies purus quis fringilla. Mauris libero dolor, dapibus non sem quis, volutpat accumsan dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut dapibus interdum ipsum, eu mattis metus gravida sit amet. Donec ac finibus velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc neque libero, ullamcorper vel justo nec, accumsan vehicula augue. Maecenas orci nunc, pellentesque vel suscipit non, efficitur et enim.",
+    desc: "We deal in multiple streams like KPO that includes data entry projects and BPO i.e call center services projects. Also provide voice and on-voice projects.We make us diffrent by handling bulk projects with consistent accuracy and time duration.",
   },
   {
     id: 2,
