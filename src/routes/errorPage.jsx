@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
+import errorImg from "../assets/errorImage.jpg";
 
 function ErrorPage() {
   return (
@@ -8,7 +9,7 @@ function ErrorPage() {
       <div className='errorPage'>
         <img
           style={{ width: "100%", height: "85vh" }}
-          src={process.env.PUBLIC_URL + "/assets/errorImage.jpg"}
+          src={errorImg}
           alt='Error 404, Page Not Found!'
         />
       </div>

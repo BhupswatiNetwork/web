@@ -5,7 +5,7 @@ function Team({ member }) {
         <img src={member.image} alt={member.name} />
       </div>
       <div className='member_info'>
-        <h3 className='text-highlight'>{member.name}</h3>
+        <h3 className='text-hglt'>{member.name}</h3>
         <h4>{member.designation}</h4>
       </div>
     </div>

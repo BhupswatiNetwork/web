@@ -3,10 +3,7 @@ function Service({ service }) {
     <div className='service-home'>
       <div className='service-home_card'>
         <div className='service-home_card_img'>
-          <img
-            src={process.env.PUBLIC_URL + `/assets/${service.img}`}
-            alt={service.title}
-          />
+          <img src={`../assets/${service.img}`} alt={service.title} />
         </div>
         <div className='service-home_card_info'>
           <h2>{service.title}</h2>

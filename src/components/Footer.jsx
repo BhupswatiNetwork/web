@@ -1,5 +1,8 @@
 import footerLinks from "../data/footer_links";
 import Foot from "./Foot";
+import fb from "../assets/facebook.svg";
+import insta from "../assets/instagram.svg";
+import twitter from "../assets/twitter.svg";
 
 function Footer() {
   return (
@@ -11,22 +14,13 @@ function Footer() {
       </div>
       <div className='social-links'>
         <div className='icons'>
-          <img
-            src={process.env.PUBLIC_URL + "/assets/facebook.svg"}
-            alt='facebook logo'
-          />
+          <img src={fb} alt='facebook logo' />
         </div>
         <div className='icons'>
-          <img
-            src={process.env.PUBLIC_URL + "/assets/instagram.svg"}
-            alt='instagram logo'
-          />
+          <img src={insta} alt='instagram logo' />
         </div>
         <div className='icons'>
-          <img
-            src={process.env.PUBLIC_URL + "/assets/twitter.svg"}
-            alt='twitter logo'
-          />
+          <img src={twitter} alt='twitter logo' />
         </div>
       </div>
       <p className='footer-text'>

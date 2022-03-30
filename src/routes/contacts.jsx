@@ -118,7 +118,7 @@ function Contacts() {
           </Bounce>
           <Bounce top>
             <div className='contacts_right'>
-              <p className='text-md'>Get In Touch With Us</p>
+              <p className='text-md text-hglt'>Get In Touch With Us</p>
               <p
                 className='text-xsm'
                 style={{ color: "gray", margin: "0.8rem auto" }}

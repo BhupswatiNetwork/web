@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import Links from "./Links";
 import { FaHamburger, FaPhone } from "react-icons/fa";
+import logo from "../assets/web-logo.png";
 
-function Header() {
+function Header({ app }) {
   const [width, SetWidth] = useState(window.innerWidth);
 
   const [showMenu, setShowMenu] = useState(false);
@@ -22,13 +23,9 @@ function Header() {
   return (
     <>
       {width > 768 ? (
-        <div className='header'>
+        <div className={`header  ${app ? "" : "header-dark"}`}>
           {/* <p className='header_logo text-sm'>Logo</p> */}
-          <img
-            className='logo'
-            src={process.env.PUBLIC_URL + "/assets/web-logo.png"}
-            alt='Logo of the website'
-          />
+          <img className='logo' src={logo} alt='Logo of the website' />
           <Links />
           <p className='header_call text-sm btn call-btn'>
             <a href='tel:+919876543210'>
