@@ -691,6 +691,7 @@ time {
     height: 50px;
     border-radius: 100%;
     position: fixed;
+    z-index: 100;
     right: 20px;
     bottom: 20px;
     font-size: 30px;
