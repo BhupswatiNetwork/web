@@ -1,4 +1,3 @@
-import footerLinks from "../data/footer_links";
 import fb from "../assets/facebook.svg";
 import linkedin from "../assets/linkedin.svg";
 import twitter from "../assets/twitter.svg";
@@ -17,6 +16,7 @@ function Footer() {
           <a
             href='https://www.facebook.com/BhupswatiNetwork/?msclkid=487b484cafe611ecafaa2da6fa67cfb1'
             target='_blank'
+            rel='noreferrer'
           >
             <img src={fb} alt='facebook logo' />
           </a>
@@ -25,6 +25,7 @@ function Footer() {
           <a
             href='https://in.linkedin.com/in/bhupswati-network-private-limited-366592223?msclkid=f5648b8dafe611ecb71727bfc4756de3'
             target='_blank'
+            rel='noreferrer'
           >
             <img src={linkedin} alt='instagram logo' />
           </a>

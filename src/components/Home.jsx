@@ -22,7 +22,7 @@ function Home() {
           </Link>
         </Carousel.Item>
         <Carousel.Item interval={1000} style={{ position: "relative" }}>
-          <img className='d-block w-100' src={slider2} alt='Slider Two' />
+          <img className='d-block w-100' src={slider3} alt='Slider Three' />
           <Link to='/services'>
             <button className='btn app-btn primary-btn'>Know More</button>
           </Link>

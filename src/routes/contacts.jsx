@@ -50,7 +50,7 @@ function Contacts() {
         msg: "",
       });
     }
-  }, [errors, isSubmit]);
+  }, [errors, isSubmit, contactForm, formData]);
 
   const validate = (data) => {
     const error = {};
