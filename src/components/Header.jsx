@@ -36,7 +36,7 @@ function Header({ app }) {
       ) : (
         <>
           <div className='m-header'>
-            <p className='header_logo text-sm'>Logo</p>
+            <img className='logo' src={logo} alt='Logo of the website' />
             <div className='m-menu'>
               <div
                 className='m-menu_icon'

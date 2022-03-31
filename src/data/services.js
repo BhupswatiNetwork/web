@@ -2,7 +2,7 @@ const services = [
   {
     id: 1,
     title: "Outsourcing Services",
-    img: "web-designing.jpg",
+    img: "outSouring.png",
     desc: [
       {
         name: "",

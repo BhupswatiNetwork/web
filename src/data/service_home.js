@@ -31,7 +31,7 @@ const services = [
   },
   {
     id: 6,
-    img: "b2b.png",
+    img: "manufacturing.png",
     title: "Manufacturing",
     desc: "Helping Generating Leads to Business",
   },

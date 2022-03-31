@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import Bounce from "react-reveal/Bounce";
 import firebase from "../config/firebase";
 import {
@@ -8,16 +9,8 @@ import {
   FaMapMarkerAlt,
   FaLocationArrow,
 } from "react-icons/fa";
-import MyMap from "../components/MyMap";
 
 function Contacts() {
-  const locations = [
-    {
-      lat: 28.5005905,
-      lng: 77.0372613,
-    },
-  ];
-
   const contactForm = firebase.database().ref("clients");
 
   const [formData, setFormData] = useState({
@@ -110,10 +103,6 @@ function Contacts() {
                   </p>
                 </div>
               </div>
-              <div className='contacts_left_map'>
-                {/* <MapAddress /> */}
-                <MyMap locations={locations} />
-              </div>
             </div>
           </Bounce>
           <Bounce top>
@@ -201,6 +190,7 @@ function Contacts() {
           </Bounce>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

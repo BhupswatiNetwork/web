@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import branches from "../data/branches";
 import Fade from "react-reveal/Fade";
 
@@ -28,6 +29,7 @@ function Branches() {
           ))}
         </ul>
       </div>
+      <Footer />
     </>
   );
 }

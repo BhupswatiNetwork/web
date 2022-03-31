@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import Fade from "react-reveal/Fade";
 import services from "../data/services";
 
@@ -35,6 +36,7 @@ function Services() {
           ))}
         </div>
       </div>
+      <Footer />
     </>
   );
 }

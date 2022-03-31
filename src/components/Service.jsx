@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Service({ service }) {
   return (
     <div className='service-home'>
@@ -8,9 +10,11 @@ function Service({ service }) {
         <div className='service-home_card_info'>
           <h2>{service.title}</h2>
           <p className='desc'>{service.desc}</p>
-          <button className='btn service-home-btn primary-btn'>
-            Know More
-          </button>
+          <Link to='/b2b'>
+            <button className='btn service-home-btn primary-btn'>
+              Know More
+            </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -278,57 +278,8 @@ textarea {
 /* ABOUT US PAGE CSS */
 .about-container {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 1rem;
-}
-
-.who-we-are {
-  grid-column: 1 / 5;
-  padding: 1rem;
-  border-top-left-radius: 20px;
-  background-color: #456990;
-  /* background: linear-gradient(
-    83deg,
-    rgba(33, 207, 209, 1) 0%,
-    rgba(253, 251, 45, 1) 100%
-  ); */
-}
-
-.our-mission {
-  grid-column: 5 / end;
-  padding: 1rem;
-  border-top-right-radius: 20px;
-  background-color: #f45b69;
-  /* background: linear-gradient(
-    90deg,
-    rgba(255, 222, 0, 1) 31%,
-    rgba(254, 101, 101, 1) 100%
-  ); */
-}
-
-.what-we-do {
-  grid-column: 1 / span 3;
-  padding: 1rem;
-  border-bottom-left-radius: 20px;
-  background-color: #fa6843;
-  /* background: radial-gradient(
-    circle,
-    rgba(238, 174, 202, 1) 0%,
-    rgba(200, 179, 215, 1) 57%,
-    rgba(148, 187, 233, 1) 100%
-  ); */
-}
-
-.our-history {
-  grid-column: 4 / end;
-  padding: 1rem;
-  border-bottom-right-radius: 20px;
-  background-color: blueviolet;
-  /* background: radial-gradient(
-    circle,
-    rgba(155, 147, 210, 1) 44%,
-    rgba(233, 148, 230, 1) 100%
-  ); */
 }
 
 /* SERVICES PAGE CSS */
@@ -360,11 +311,11 @@ textarea {
   border: 3px solid rgba(11, 180, 191, 0.5); */
 }
 
-.service.right > img {
-  /* -webkit-box-shadow: 34px 34px 1px 0px rgba(11, 180, 191, 0.5);
+/* .service.right > img {
+   -webkit-box-shadow: 34px 34px 1px 0px rgba(11, 180, 191, 0.5);
   -moz-box-shadow: 34px 34px 1px 0px rgba(11, 180, 191, 0.5);
-  box-shadow: 34px 34px 1px 0px rgba(11, 180, 191, 0.5); */
-}
+  box-shadow: 34px 34px 1px 0px rgba(11, 180, 191, 0.5); 
+} */
 
 .service_info_title {
   font-family: "Lato", sans-serif;
@@ -388,27 +339,13 @@ textarea {
     var(--gradientOne) 110.88%
   );
   padding-top: 2rem;
-}
-
-.footer {
   display: flex;
-  justify-content: space-evenly;
-}
-
-.foot_link h2 {
-  margin-bottom: 1rem;
-  color: var(--textHighlight);
-}
-
-.foot_link p {
-  margin-bottom: 0.7rem;
-  font-weight: bold;
-  color: var(--bgColor);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 1rem;
 }
 
 .social-links {
-  width: 80%;
-  margin: auto;
   display: flex;
   justify-content: center;
 }
@@ -420,10 +357,6 @@ textarea {
   margin: 1rem 0.5rem;
   cursor: pointer;
   color: var(--textHighlight);
-}
-
-.footer-text {
-  text-align: center;
 }
 
 /* CONTACT PAGE CSS */
@@ -442,8 +375,8 @@ textarea {
 
 .contacts_left_info {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1.2rem 0.8rem;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 0 1rem;
   margin-bottom: 1.5rem;
 }
 
@@ -730,7 +663,12 @@ time {
   .m-header {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     padding: 1rem;
+  }
+
+  .m-header img {
+    margin-top: -1rem;
   }
 
   .m-menu {

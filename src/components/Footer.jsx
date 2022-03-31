@@ -1,35 +1,38 @@
 import footerLinks from "../data/footer_links";
-import Foot from "./Foot";
 import fb from "../assets/facebook.svg";
-import insta from "../assets/instagram.svg";
+import linkedin from "../assets/linkedin.svg";
 import twitter from "../assets/twitter.svg";
 
 function Footer() {
   return (
     <div className='footer-container'>
-      <div className='footer'>
-        {footerLinks.map((link) => (
-          <Foot key={link.id} link={link} />
-        ))}
-      </div>
+      <p className='text-sm'>helpdesk@bhupswatinetwork.in</p>
+      <p className='footer-text'>
+        &copy;{" "}
+        <span className='text-hglt'>Bhupswati Network Private Limited</span>.
+        All rights reserved
+      </p>
       <div className='social-links'>
         <div className='icons'>
-          <img src={fb} alt='facebook logo' />
+          <a
+            href='https://www.facebook.com/BhupswatiNetwork/?msclkid=487b484cafe611ecafaa2da6fa67cfb1'
+            target='_blank'
+          >
+            <img src={fb} alt='facebook logo' />
+          </a>
         </div>
         <div className='icons'>
-          <img src={insta} alt='instagram logo' />
+          <a
+            href='https://in.linkedin.com/in/bhupswati-network-private-limited-366592223?msclkid=f5648b8dafe611ecb71727bfc4756de3'
+            target='_blank'
+          >
+            <img src={linkedin} alt='instagram logo' />
+          </a>
         </div>
         <div className='icons'>
           <img src={twitter} alt='twitter logo' />
         </div>
       </div>
-      <p className='footer-text'>
-        &copy;{" "}
-        <span className='text-highlight'>
-          Bhupswati Network Private Limited
-        </span>
-        . All rights reserved
-      </p>
     </div>
   );
 }
