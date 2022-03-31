@@ -621,15 +621,9 @@ time {
     width: 100%;
   }
 
-  .footer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .foot_link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .footer-container {
+    display: block;
+    text-align: center;
   }
 
   .service {
