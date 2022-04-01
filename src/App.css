@@ -143,7 +143,7 @@ textarea {
 
 .header_nav {
   display: flex;
-  flex: 0.6;
+  flex: 0.8;
   justify-content: space-around;
   align-items: center;
 }
@@ -343,6 +343,8 @@ textarea {
   justify-content: space-between;
   align-items: center;
   padding: 0.2rem 1rem;
+  word-wrap: break-word;
+  overflow-x: hidden;
 }
 
 .social-links {
@@ -705,5 +707,9 @@ time {
       var(--gradientTwo),
       var(--gradientOne)
     );
+  }
+
+  .footer-container p.text-sm {
+    font-size: 1rem;
   }
 }

@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa";
 
 function Contacts() {
-  const contactForm = firebase.database().ref("clients");
+  const contactForm = firebase.database().ref("clientData");
 
   const [formData, setFormData] = useState({
     name: "",
@@ -50,7 +50,7 @@ function Contacts() {
         msg: "",
       });
     }
-  }, [errors, isSubmit, contactForm, formData]);
+  }, [errors, isSubmit]);
 
   const validate = (data) => {
     const error = {};

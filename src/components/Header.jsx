@@ -28,8 +28,8 @@ function Header({ app }) {
           <img className='logo' src={logo} alt='Logo of the website' />
           <Links />
           <p className='header_call text-sm btn call-btn'>
-            <a href='tel:+919876543210'>
-              <FaPhone /> 9876543210
+            <a href='tel:+919540318192'>
+              <FaPhone /> 95403 18192
             </a>
           </p>
         </div>
@@ -47,7 +47,7 @@ function Header({ app }) {
               {showMenu && <Links />}
             </div>
           </div>
-          <a href='tel:+919876543210'>
+          <a href='tel:+919540318192'>
             <div className='m-call'>
               <FaPhone />
             </div>

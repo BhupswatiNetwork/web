@@ -5,7 +5,7 @@ import twitter from "../assets/twitter.svg";
 function Footer() {
   return (
     <div className='footer-container'>
-      <p className='text-sm'>helpdesk@bhupswatinetwork.in</p>
+      <p className='text-xsm'>helpdesk@bhupswatinetwork.in</p>
       <p className='footer-text'>
         &copy;{" "}
         <span className='text-hglt'>Bhupswati Network Private Limited</span>.
