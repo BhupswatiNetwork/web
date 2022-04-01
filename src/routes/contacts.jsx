@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa";
 
 function Contacts() {
-  const contactForm = firebase.database().ref("clientData");
+  const contactForm = firebase.database().ref("clientsData");
 
   const [formData, setFormData] = useState({
     name: "",
