@@ -27,7 +27,10 @@ function Header({ app }) {
           {/* <p className='header_logo text-sm'>Logo</p> */}
           <img className='logo' src={logo} alt='Logo of the website' />
           <Links />
-          <p className='header_call text-sm btn call-btn'>
+          <p
+            className='header_call text-sm btn call-btn'
+            style={{ marginTop: "1rem" }}
+          >
             <a href='tel:+919540318192'>
               <FaPhone /> 95403 18192
             </a>

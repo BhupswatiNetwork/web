@@ -10,7 +10,7 @@ function Service({ service }) {
         <div className='service-home_card_info'>
           <h2>{service.title}</h2>
           <p className='desc'>{service.desc}</p>
-          <Link to='/b2b'>
+          <Link to={service.link}>
             <button className='btn service-home-btn primary-btn'>
               Know More
             </button>
