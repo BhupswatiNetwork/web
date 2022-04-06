@@ -50,11 +50,6 @@ function Header({ app }) {
               {showMenu && <Links />}
             </div>
           </div>
-          <a href='tel:+919540318192'>
-            <div className='m-call'>
-              <FaPhone />
-            </div>
-          </a>
         </>
       )}
     </>

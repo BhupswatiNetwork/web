@@ -9,7 +9,7 @@ function Footer() {
       <a
         style={{
           position: "fixed",
-          left: "20px",
+          right: "20px",
           bottom: "20px",
           zIndex: "15",
           fontWeight: "600",
@@ -21,17 +21,16 @@ function Footer() {
         target='_blank'
         rel='noreferrer'
       >
-        <span style={{ marginRight: "5px" }}>
+        <span>
           <img className='icon' src={whatsapp} alt='whatsapp icon' />
         </span>
-        Chat with us
       </a>
       <div className='footer-container'>
         <p className='text-xsm'>helpdesk@bhupswatinetwork.in</p>
-        <p className='footer-text'>
+        <p className='footer-text' style={{ marginTop: "1rem" }}>
           &copy;{" "}
           <span className='text-hglt'>Bhupswati Network Private Limited</span>.
-          All rights reserved
+          <p style={{ textAlign: "center" }}>All rights reserved</p>
         </p>
         <div className='social-links'>
           <div className='icons'>
