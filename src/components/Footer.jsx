@@ -10,7 +10,7 @@ function Footer() {
         style={{
           position: "fixed",
           right: "20px",
-          bottom: "20px",
+          bottom: "60px",
           zIndex: "15",
           fontWeight: "600",
           fontSize: "1.2rem",
@@ -26,11 +26,29 @@ function Footer() {
         </span>
       </a>
       <div className='footer-container'>
-        <p className='text-xsm'>helpdesk@bhupswatinetwork.in</p>
+        <a href='mailto:enquiry@bhupswatinetwork.com' rel='noreferrer'>
+          enquiry@bhupswatinetwork.com
+        </a>
         <p className='footer-text' style={{ marginTop: "1rem" }}>
           &copy;{" "}
           <span className='text-hglt'>Bhupswati Network Private Limited</span>.
-          <p style={{ textAlign: "center" }}>All rights reserved</p>
+          <p style={{ textAlign: "center" }}>
+            All rights reserved &nbsp; &nbsp;
+            <a
+              href='https://www.disclaimergenerator.net/live.php?token=Auln8emF8eARzM1uP2f2UYRKeKUAEqMR'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Disclaimer &nbsp; &nbsp;
+            </a>
+            <a
+              href='https://www.privacypolicygenerator.info/live.php?token=stoplGB7vsB5xdIZ1xQE9ep1lzwkE08v'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Privacy policy
+            </a>
+          </p>
         </p>
         <div className='social-links'>
           <div className='icons'>
