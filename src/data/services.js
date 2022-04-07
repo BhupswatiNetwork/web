@@ -6,7 +6,7 @@ const services = [
     desc: [
       {
         name: "",
-        text: "We deal in multiple streams like KPO that includes data entry projects and BPO i.e call center services projects. Also provide voice and on-voice projects.We make us diffrent by handling bulk projects with consistent accuracy and time duration.",
+        text: "We deal in multiple streams like KPO that includes data entry projects and BPO i.e call center services projects. Also provide voice and on-voice projects.We make us diffrent by handling bulk projects with consistent accuracy and time duration",
       },
     ],
   },
@@ -17,11 +17,11 @@ const services = [
     desc: [
       {
         name: "Business Growth Loan",
-        text: "We provide BGL to help your business start and grow in the market with minimum interest rate. We welcome all the startups/growing businesses to connect with us and begin your wonderful journey.",
+        text: "We provide BGL to help your business start and grow in the market with minimum interest rate. We welcome all the startups/growing businesses to connect with us and begin your wonderful journey",
       },
       {
         name: "Emergency Loan",
-        text: "We give emergency loans for people experiencing shortterm financial emergencies.",
+        text: "We give emergency loans for people experiencing shortterm financial emergencies",
       },
     ],
   },
@@ -32,7 +32,7 @@ const services = [
     desc: [
       {
         name: "Web Development",
-        text: "We hate poor designs, & hence we are first following our passion then doing a business. We execute brilliant design ideas to get it all together in one beautiful experience.",
+        text: "We hate poor designs, & hence we are first following our passion then doing a business. We execute brilliant design ideas to get it all together in one beautiful experience",
       },
       {
         name: "App Development",
@@ -40,7 +40,7 @@ const services = [
       },
       {
         name: "Game Development",
-        text: "GAME DEVELOPMENT SERVICES Highly Engaging Game Design and Development Company END TO END GAME DESIGN, DEVELOPMENT, DEPLOYMENT.",
+        text: "Game development services highly engaging game design and development company end to end game design, development and deployment",
       },
     ],
   },
@@ -51,7 +51,7 @@ const services = [
     desc: [
       {
         name: "",
-        text: "We help buisnesses in growing and connecting with their potential customers by generating leads for their buisness as per requirments.",
+        text: "We help buisnesses in growing and connecting with their potential customers by generating leads for their buisness as per requirments",
       },
     ],
   },
