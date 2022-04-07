@@ -26,20 +26,17 @@ function Footer() {
         </span>
       </a>
       <div className='footer-container'>
-        <a href='mailto:enquiry@bhupswatinetwork.com' rel='noreferrer'>
-          enquiry@bhupswatinetwork.com
-        </a>
-        <p className='footer-text' style={{ marginTop: "1rem" }}>
-          &copy;{" "}
-          <span className='text-hglt'>Bhupswati Network Private Limited</span>.
-          <p style={{ textAlign: "center" }}>
-            All rights reserved &nbsp; &nbsp;
+        <p style={{ marginTop: "1rem" }}>
+          <a href='mailto:info@bhupswatinetwork.com' rel='noreferrer'>
+            info@bhupswatinetwork.com
+          </a>
+          <p>
             <a
               href='https://www.disclaimergenerator.net/live.php?token=Auln8emF8eARzM1uP2f2UYRKeKUAEqMR'
               target='_blank'
               rel='noreferrer'
             >
-              Disclaimer &nbsp; &nbsp;
+              Disclaimer &nbsp; | &nbsp;
             </a>
             <a
               href='https://www.privacypolicygenerator.info/live.php?token=stoplGB7vsB5xdIZ1xQE9ep1lzwkE08v'
@@ -49,6 +46,11 @@ function Footer() {
               Privacy policy
             </a>
           </p>
+        </p>
+        <p className='footer-text' style={{ marginTop: "1rem" }}>
+          &copy;{" "}
+          <span className='text-hglt'>Bhupswati Network Private Limited</span>.
+          <p style={{ textAlign: "center" }}>All rights reserved</p>
         </p>
         <div className='social-links'>
           <div className='icons'>

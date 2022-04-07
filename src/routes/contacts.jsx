@@ -93,7 +93,27 @@ function Contacts() {
                 </div>
                 <div className='contacts_left_info_email'>
                   <FaMailBulk className='icon' />{" "}
-                  <p className='text-xsm'>helpdesk@bhupswatinetwork.in</p>
+                  <p className='text-xsm'>
+                    <a
+                      href='mailto:enquiry@bhupswatinetwork.com'
+                      rel='noreferrer'
+                    >
+                      enquiry@bhupswatinetwork.com
+                    </a>
+                  </p>
+                  <p className='text-xsm'>
+                    <a
+                      href='mailto:support@bhupswatinetwork.com'
+                      rel='noreferrer'
+                    >
+                      support@bhupswatinetwork.com
+                    </a>
+                  </p>
+                  <p className='text-xsm'>
+                    <a href='mailto:info@bhupswatinetwork.com' rel='noreferrer'>
+                      info@bhupswatinetwork.com
+                    </a>
+                  </p>
                 </div>
                 <div className='contacts_left_info_address'>
                   <FaMapMarkerAlt className='icon' />
@@ -183,7 +203,7 @@ function Contacts() {
                 </div>
                 <button className='btn btn-submit' type='submit'>
                   <FaLocationArrow className='icon-sm' />
-                  <p className='text-xsm'>Send</p>
+                  <p className='text-xsm'>Submit</p>
                 </button>
               </form>
             </div>
