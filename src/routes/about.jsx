@@ -42,8 +42,8 @@ function About() {
               <span className='text-md'>The areas </span>
               of our expertise lies in the domain of creating a customer
               friendly & engaging environment via Web Development & Designing ,
-              App Designing , Logo Designing, Search Engine Optimization & Game
-              Development.
+              App Designing , Logo Designing, Search Engine Optimization ,
+              outsourcing, B2B, finance support & Digital marketing.
             </p>
           </div>
           <div className='our-history'>

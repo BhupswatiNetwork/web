@@ -10,11 +10,18 @@ function Footer() {
         style={{
           position: "fixed",
           right: "20px",
-          bottom: "60px",
+          bottom: "65px",
           zIndex: "15",
           fontWeight: "600",
           fontSize: "1.2rem",
           backgroundColor: "#25D366",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          width: "50px",
+          height: "50px",
+          borderRadius: "50%",
+          overflow: "hidden",
         }}
         className='btn whatsapp'
         href='https://api.whatsapp.com/send?phone=+919540318192'

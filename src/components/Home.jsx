@@ -8,13 +8,13 @@ function Home() {
   return (
     <>
       <Carousel>
-        <Carousel.Item interval={1500} style={{ position: "relative" }}>
+        <Carousel.Item interval={2500} style={{ position: "relative" }}>
           <img className='d-block w-100' src={slider1} alt='Slider One' />
           <Link to='/services'>
             <button className='btn app-btn primary-btn'>Know More</button>
           </Link>
         </Carousel.Item>
-        <Carousel.Item interval={1000} style={{ position: "relative" }}>
+        <Carousel.Item interval={2500} style={{ position: "relative" }}>
           <img className='d-block w-100' src={slider2} alt='Slider Two' />
           <Link to='/services'>
             <button className='btn app-btn primary-btn'>Know More</button>

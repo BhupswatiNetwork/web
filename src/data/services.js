@@ -6,7 +6,7 @@ const services = [
     desc: [
       {
         name: "",
-        text: "We deal in multiple streams like KPO that includes data entry projects and BPO i.e call center services projects. Also provide voice and on-voice projects.We make us diffrent by handling bulk projects with consistent accuracy and time duration",
+        text: "We deal in multiple streams like KPO that includes data entry projects and BPO i.e call center services projects. Also provide voice and non-voice projects.We make us diffrent by handling bulk projects with consistent accuracy and time duration",
       },
     ],
   },
@@ -36,7 +36,7 @@ const services = [
       },
       {
         name: "App Development",
-        text: "We are an experienced agency specializing in developing custom mobile apps for Android platforms for businesses of any size. Tell us your business idea",
+        text: "We are an experienced company specializing in developing custom mobile apps for Android platforms for businesses of any size. Tell us your business idea",
       },
       {
         name: "Game Development",
